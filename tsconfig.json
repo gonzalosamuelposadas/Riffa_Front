@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -18,8 +22,47 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ],
+      "@auth": [
+        "./src/modules/auth"
+      ],
+      "@auth/*": [
+        "./src/modules/auth/*"
+      ],
+      "@admin": [
+        "./src/modules/admin"
+      ],
+      "@admin/*": [
+        "./src/modules/admin/*"
+      ],
+      "@raffles": [
+        "./src/modules/raffles"
+      ],
+      "@raffles/*": [
+        "./src/modules/raffles/*"
+      ],
+      "@purchases": [
+        "./src/modules/purchases"
+      ],
+      "@purchases/*": [
+        "./src/modules/purchases/*"
+      ],
+      "@user-auth": [
+        "./src/modules/user-auth"
+      ],
+      "@user-auth/*": [
+        "./src/modules/user-auth/*"
+      ],
+      "@shared": [
+        "./src/shared"
+      ],
+      "@shared/*": [
+        "./src/shared/*"
+      ]
     }
   },
   "include": [
@@ -27,8 +70,10 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    ".next/dev/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "backend"
+  ]
 }
